@@ -76,6 +76,6 @@ Options first!
 
 Let's install Konacha testing environment!
 
-`rails g ember_konacha:install`
+`rails g ember_konacha:install --guide`
 
 **To be continued...**
