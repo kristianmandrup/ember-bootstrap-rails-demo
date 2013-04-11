@@ -8,6 +8,10 @@ module SweetRouting
       {constraints: mime_match(type) }
     end
 
+    def app_root path
+      root only_for(:html).merge to: path
+    end
+
     def json_resources *args
       options = args.extract_options!
       options.merge! only_for(type)

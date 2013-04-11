@@ -1,5 +1,6 @@
 EmberBootstrapRailsDemo::Application.routes.draw do
-  # json_resources :users, :except => :edit
+  # Note: Uses SweetRouting macros!
 
-  root only_for(:html).merge to: 'application#index'
+  # json_resources :users, :except => :edit
+  app_root 'application#index'
 end
