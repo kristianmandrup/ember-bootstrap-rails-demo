@@ -56,11 +56,17 @@ Change name of ember Application namespace :)
 
 `MyApp = Ember.Application.create();` becomes simply `window.App = Ember.Application.create()`
 
-To setup testing we could now use the [ember-konacha-rails](https://github.com/kristianmandrup/ember-konacha-rails) gem.
+To setup testing we will use [Konacha](https://github.com/jfirebaugh/konacha) and [Sinon](http://sinonjs.org/). 
 
-We also have RubyJS via [rubyjs-rails](https://github.com/rubyjs/rubyjs-rails), useful to make our coffee even sweeter and stronger!
+To see Konacha live in action, check out this [video](http://www.youtube.com/watch?v=heK78M6Ql9Q). AWESOME!
 
-**To be continued...**
+We use the [ember-konacha-rails](https://github.com/kristianmandrup/ember-konacha-rails) gem.
+
+We also have [RubyJS](http://rubyjs.org/) via [rubyjs-rails](https://github.com/rubyjs/rubyjs-rails). We wanna make our coffee even sweeter, yet stronger!
+
+To make it all extra delicious, we add [slim](http://slim-lang.com/) for templating the index page. We also spice up with [Emblem js](http://emblemjs.com/) via [emblem-rails](https://github.com/alexspeller/emblem-rails) to replace the default [Handlebars](http://handlebarsjs.com/) templating on the Ember side ;)
+
+Nice!
 
 ## Setup testing environment
 
@@ -71,3 +77,5 @@ Options first!
 Let's install Konacha testing environment!
 
 `rails g ember_konacha:install`
+
+**To be continued...**
