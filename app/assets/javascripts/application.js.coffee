@@ -4,6 +4,7 @@
 #= require ember
 #= require ember-data
 #= require_self
+#= require ember-bootstrap-rails/all
 #= require app
 
 window.EmberBootstrapRailsDemo = Ember.Application.create();
