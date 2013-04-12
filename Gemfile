@@ -42,13 +42,13 @@ gem 'sweet_routing',                      github: 'kristianmandrup/sweet_routing
 
 group :development do
   gem 'quiet_assets'
+  gem "guard"
+  gem 'guard-konacha'
+  gem 'guard-livereload'
 end
 
 group :development, :test do
   gem 'poltergeist'
   gem 'konacha'
   gem 'ember-konacha-rails',              github: 'kristianmandrup/ember-konacha-rails'
-
-  gem "guard"
-  gem "guard-konacha"
 end
