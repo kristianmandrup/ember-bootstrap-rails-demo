@@ -1,3 +1,2 @@
-EmberBootstrapRailsDemo.Router.map (match)->
+App.Router.map ->
   # match('/').to('index')
-
