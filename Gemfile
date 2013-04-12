@@ -42,6 +42,10 @@ gem 'sweet_routing',                      github: 'kristianmandrup/sweet_routing
 
 group :development do
   gem 'quiet_assets'
+
+  gem 'rb-inotify', :require => false
+  gem 'rb-fsevent', :require => false
+  gem 'rb-fchange', :require => false
   gem "guard"
   gem 'guard-konacha'
   gem 'guard-livereload'
