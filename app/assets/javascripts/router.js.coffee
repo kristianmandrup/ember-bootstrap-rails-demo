@@ -16,4 +16,4 @@ App.Router.map ->
   @route 'media',       path: 'media'
 
   @resource 'examples', ->
-    @route 'show',      path: 'examples/:example_id'
+    @resource 'example', path: ':example_id'
