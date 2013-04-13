@@ -1,0 +1,1 @@
+App.ExamplesController = Ember.ArrayController.extend()

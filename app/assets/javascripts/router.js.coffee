@@ -15,7 +15,5 @@ App.Router.map ->
   @route 'progressbars',path: 'progressbars'
   @route 'media',       path: 'media'
 
-  resources 'examples', ->
-    routes 'show',      path: 'examples/:example_id'
-
-
+  @resource 'examples', ->
+    @resource 'example', path: ':example_id'

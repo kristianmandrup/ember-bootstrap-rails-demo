@@ -1,1 +1,28 @@
-<h1>Bootstrap Examples Demo</h1>
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>Examples</h1>
+    <p class="lead">Show some great examples to make it easy to understand how it work.</p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="span3 bs-docs-sidebar">
+      <ul class="nav nav-list bs-docs-sidenav">
+        {{#each example in controller}}
+          <li>{{#linkTo example example}}<i class="icon-chevron-right"></i>{{example.name}}{{/linkTo}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="span9">
+
+    <section id="home">
+      <div class="page-header">
+        <h1>Ember Bootstrap Rails Examples</h1>
+      </div>
+
+    </section>
+
+    </div>
+  </div>
+</div>
