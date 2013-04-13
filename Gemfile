@@ -21,8 +21,7 @@ group :assets do
 
   gem 'rubyjs-rails'
   gem 'bootstrap-sass',         '~> 2.3.1.0'
-  gem 'ember-bootstrap-rails',                  github: 'kristianmandrup/ember-bootstrap-rails'
-  # gem 'ember-big_project',                      github: 'kristianmandrup/ember-big_project'
+  gem 'ember-bootstrap-rails',  '~> 0.0.2'      github: 'kristianmandrup/ember-bootstrap-rails'
 end
 
 # SLIM: mmmm, less <%%>s
