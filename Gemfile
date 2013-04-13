@@ -30,11 +30,10 @@ gem 'slim', '~> 2.0.0.pre.6'
 # rails 4 compatible version!
 gem 'compass-rails',                      github: 'Compass/compass-rails', branch: 'rails4'
 
-gem 'handlebars_assets'
 gem 'jquery-rails'
-gem 'ember-rails',        '~> 0.11.1',    github: 'emberjs/ember-rails'
+gem 'ember-source',      "1.0.0.rc2.0"
+gem 'ember-rails'
 gem 'emblem-rails',                       github: 'alexspeller/emblem-rails'
-gem 'handlebars-source',  '~> 1.0.0.rc3'
 
 gem "ember-auth-rails"
 gem 'sweet_routing',                      github: 'kristianmandrup/sweet_routing'
