@@ -1,0 +1,1 @@
+App.ExampleController = Ember.ObjectController.extend()

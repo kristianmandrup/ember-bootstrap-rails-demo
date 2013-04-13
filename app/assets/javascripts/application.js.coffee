@@ -1,8 +1,10 @@
 #= require jquery
 #= require jquery_ujs
+#= require bootstrap
 #= require handlebars
 #= require ember
 #= require ember-data
 #= require ember-bootstrap/all
 #= require app
+#= require docs
 #= require_self
