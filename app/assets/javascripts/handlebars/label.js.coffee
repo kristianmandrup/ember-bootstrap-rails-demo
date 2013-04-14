@@ -1,4 +1,5 @@
-Ember.Handlebars.registerViewHelper 'bsLabel', Bootstrap.Label
+# Ember.Handlebars.registerViewHelper 'bsLabel', Bootstrap.Label
 
-console.log 'registered: bsLabel'
+Ember.Handlebars.registerHelper 'bsLabel', (name) ->
+  console.log 'registered: bsLabel'
   
