@@ -1,6 +1,7 @@
 #= require jquery
 #= require jquery_ujs
 #= require bootstrap
+#= require vendor/prettify
 #= require handlebars
 #= require ember
 #= require ember-data
