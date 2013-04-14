@@ -1,19 +1,20 @@
 App.Router.map ->
   @route 'home', path: "/"
 
-  @route 'text',        path: 'text'
-  @route 'forms',       path: 'forms'
-  @route 'tables',      path: 'tables'
-  @route 'dropdowns',   path: 'dropdowns'
-  @route 'buttons',     path: 'buttons'
-  @route 'navigation',  path: 'navigation'
+  @route 'text'
+  @route 'forms'
+  @route 'tables'
+  @route 'dropdowns'
+  @route 'buttons'
+  @route 'navigation'
 
-  @route 'labels',      path: 'labels'
-  @route 'images',      path: 'images'
-  @route 'thumbnails',  path: 'thumbnails'
-  @route 'alerts',      path: 'alerts'
-  @route 'progressbars',path: 'progressbars'
-  @route 'media',       path: 'media'
+  @route 'labels'
+  @route 'badges'
+  @route 'images'
+  @route 'thumbnails'
+  @route 'alerts'
+  @route 'progressbars'
+  @route 'media'
 
   @resource 'examples', ->
     @resource 'example', path: ':example_id'

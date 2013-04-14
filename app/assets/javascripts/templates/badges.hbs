@@ -42,4 +42,12 @@
       </tr>
     </tbody>
   </table>
+
+  <form>
+    {{#each type in types}}
+    <label class="radio inline">
+      <input {{action 'select' type on="change"}} type="radio" name="type" value="{{type}}"> {{view Bootstrap.Label contentBinding="type" typeBinding="type"}}
+    </label>
+    {{/each}}
+  </form>
 </section>
