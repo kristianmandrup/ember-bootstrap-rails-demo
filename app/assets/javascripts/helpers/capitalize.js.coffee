@@ -1,2 +1,2 @@
 Ember.Handlebars.registerBoundHelper 'capitalize', (value) ->
-  escaped.capitalize()
+  value.capitalize()
