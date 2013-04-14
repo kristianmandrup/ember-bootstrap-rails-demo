@@ -13,24 +13,24 @@
     <tbody>
       <tr>
         <td>
-          {{view Bootstrap.Label content="Default"}}
+          {{#bsLabel content="Default"}}
         </td>
         <td>
-          <code>&#123;{view Bootstrap.Label content="Default"}}</code>
+          <code>&#123;{#bsLabel content="Default"}}</code>
         </td>
         <td>
-          <code>&#123;{view Bootstrap.Label contentBinding="controller.label"}}</code>
+          <code>&#123;{#bsLabel contentBinding="controller.label"}}</code>
         </td>
       </tr>
       <tr>
         <td>
-          {{view Bootstrap.Label contentBinding="controller.label" typeBinding="controller.type"}}
+          {{#bsLabel contentBinding="controller.label" typeBinding="controller.type"}}
         </td>
         <td>
-          <code>&#123;{view Bootstrap.Label content="{{controller.label}}" type="{{controller.type}}"}}</code>
+          <code>&#123;{#bsLabel content="{{controller.label}}" type="{{controller.type}}"}}</code>
         </td>
         <td>
-          <code>&#123;{view Bootstrap.Label contentBinding="controller.label" typeBinding="controller.type"}}</code>
+          <code>&#123;{#bsLabel contentBinding="controller.label" typeBinding="controller.type"}}</code>
         </td>
       </tr>
     </tbody>

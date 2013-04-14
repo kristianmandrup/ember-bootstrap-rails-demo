@@ -4,4 +4,4 @@ App.LabelsController = Ember.ObjectController.extend
   types: ['success', 'warning', 'important', 'info', 'inverse']
   select: (type) ->
     @set 'type', type
-    @set 'label', type.camelize()
+    @set 'label', type.capitalize()
