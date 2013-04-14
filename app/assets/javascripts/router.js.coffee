@@ -1,9 +1,9 @@
 App.Router.map ->
   @route 'home', path: "/"
 
-  @route 'components'
-  @route 'labels'
-  @route 'badges'
+  @resource 'components', ->
+    @resource 'labels'
+    @resource 'badges'
 
   @route 'text'
   @route 'forms'
@@ -22,5 +22,5 @@ App.Router.map ->
   @resource 'examples', ->
     @resource 'example', path: ':example_id'
 
-App.Router.reopen
-  location: 'history'
+# App.Router.reopen
+#   location: 'history'
