@@ -1,2 +1,3 @@
 App.BadgeController = Ember.ObjectController.extend
-  label: 'Almost done'
+  label: '1'
+  type: 'success'
