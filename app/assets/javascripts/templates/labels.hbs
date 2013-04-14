@@ -1,5 +1,47 @@
-<h1>Bootstrap Labels Demo</h1>
-{{view Bootstrap.Label content="a label"}}
+<section id="labels">
+  <div class="page-header">
+    <h1>Labels</h1>
+  </div>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Labels</th>
+        <th>Static</th>
+        <th>Dynamic</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          {{view Bootstrap.Label content="Default"}}
+        </td>
+        <td>
+          <code>&#123;{view Bootstrap.Label content="Default"}}</code>
+        </td>
+        <td>
+          <code>&#123;{view Bootstrap.Label contentBinding="controller.label"}}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          {{view Bootstrap.Label contentBinding="controller.label" typeBinding="controller.type"}}
+        </td>
+        <td>
+          <code>&#123;{view Bootstrap.Label content="{{controller.label}}" type="{{controller.type}}"}}</code>
+        </td>
+        <td>
+          <code>&#123;{view Bootstrap.Label contentBinding="controller.label" typeBinding="controller.type"}}</code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
-{{! Bind to property on controller }}
-{{view Bootstrap.Label contentBinding="content.label"}}
+  {{! Observe form changes to update the controller label and type }}
+  <form>
+    {{#each type in types}}
+    <label class="radio inline">
+      <input type="radio" name="type" value="{{type}}"> {{view Bootstrap.Label contentBinding="type" typeBinding="type"}}
+    </label>
+    {{/each}}
+  </form>
+</section>

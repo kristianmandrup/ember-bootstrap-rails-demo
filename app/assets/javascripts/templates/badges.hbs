@@ -1,0 +1,45 @@
+<section id="badges">
+  <div class="page-header">
+    <h1>Badges</h1>
+  </div>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Example</th>
+        <th>Static</th>
+        <th>Dynamic</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Default
+        </td>
+        <td>
+          {{view Bootstrap.Badge content="1"}}
+        </td>
+        <td>
+          <code>&#123;{view Bootstrap.Badge content="1"}}</code>
+        </td>
+        <td>
+          <code>&#123;{view Bootstrap.Badge contentBinding="controller.label"}}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          {{capitalize controller.type}}
+        </td>
+        <td>
+          {{view Bootstrap.Badge contentBinding="controller.label" typeBinding="controller.type"}}
+        </td>
+        <td>
+          <code>&#123;{view Bootstrap.Badge content="{{controller.label}}" type="{{controller.type}}"}}</code>
+        </td>
+        <td>
+          <code>&#123;{view Bootstrap.Badge contentBinding="controller.label" typeBinding="controller.type"}}</code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
