@@ -1,1 +1,1 @@
-App.ExampleController = Ember.ObjectController.extend()
+App.BadgeController = Ember.ObjectController.extend()

@@ -1,1 +1,5 @@
 <h1>Bootstrap Alerts Demo</h1>
+{{view Bootstrap.AlertMessage type="success" message="You did it!"}}
+
+{{! Bind to properties on controller }}
+{{view Bootstrap.AlertMessage typeBinding="content.type" messageBinding="content.message"}}

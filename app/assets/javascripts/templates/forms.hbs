@@ -1,1 +1,10 @@
 <h1>Bootstrap Forms Demo</h1>
+
+<h2>Text field</h2>
+{{view Bootstrap.Forms.TextField valueBinding="myObject.content" label="content" help="This is an optional help message"}}
+
+<h2>Textarea</h2>
+{{view Bootstrap.Forms.TextArea valueBinding="myObject.content" label="content"}}
+
+<h2>Select</h2>
+{{view Bootstrap.Forms.Select contentBinding="content" selectionBinding="selected" label="content" optionLabelPath="content.name" optionValuePath="content.internalName"}}
