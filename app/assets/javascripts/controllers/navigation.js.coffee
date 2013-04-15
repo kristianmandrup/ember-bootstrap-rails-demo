@@ -1,3 +1,3 @@
 App.NavigationController = Ember.ObjectController.extend
-  selections: ['Alpha', 'Beta']
+  selections: ['Alpha', 'Beta', 'Gamma']
   selection: 'Alpha'

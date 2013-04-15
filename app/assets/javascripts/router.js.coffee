@@ -4,6 +4,8 @@ App.Router.map ->
   @resource 'components', ->
     @resource 'labels'
     @resource 'badges'
+    @resource 'navigation'
+    @resource 'stackable-nav'
 
   @resource 'formBuilders', ->
     @resource 'emberForm'
@@ -14,8 +16,6 @@ App.Router.map ->
   @route 'tables'
   @route 'dropdowns'
   @route 'buttons'
-  @route 'navigation'
-
 
   @route 'images'
   @route 'thumbnails'
