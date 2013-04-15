@@ -1,0 +1,15 @@
+<section id="stackable-nav">
+  <div class="page-header">
+    <h1>Stackable Nav: tabs, pills</h1>
+  </div>
+  <p>All nav components here—tabs and pills— <strong>share the same controller</strong>.</p>
+  <h3>With Controller</h3>
+  <p>A minimal controller could look like:</p>
+  <pre class="prettyprint linenums">App.StackableNavController = Ember.ObjectController.extend
+  selections: ['Alpha', 'Beta', 'Gamma']
+  selection: 'Alpha'
+  stacked: {{controller.stacked}}</pre>
+
+  {{partial 'stacked_tabs'}}
+  {{partial 'stacked_pills'}}
+</section>
