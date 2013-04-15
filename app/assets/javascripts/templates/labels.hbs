@@ -6,7 +6,7 @@
   <p>A minimal controller could look like:</p>
   <pre class="prettyprint linenums">App.LabelsController = Ember.ObjectController.extend
   label: 'Success'
-  type: 'success'</pre>  
+  type: 'success'</pre>
   <table class="table table-bordered table-striped">
     <thead>
       <tr>
@@ -18,24 +18,24 @@
     <tbody>
       <tr>
         <td>
-          {{bslabel content="Default"}}
+          {{bslabel text="Default"}}
         </td>
         <td>
-          <code>&#123;{bslabel content="Default"}}</code>
+          <code>&#123;{bslabel text="Default"}}</code>
         </td>
         <td>
-          <code>&#123;{bslabel contentBinding="controller.label"}}</code>
+          <code>&#123;{bslabel label}}</code>
         </td>
       </tr>
       <tr>
         <td>
-          {{bslabel blip="2" contentBinding="controller.label" typeBinding="controller.type"}}
+          {{bslabel textBinding="label" typeBinding="type"}}
         </td>
         <td>
-          <code>&#123;{bslabel content="{{controller.label}}" type="{{controller.type}}"}}</code>
+          <code>&#123;{bslabel text="{{controller.label}}" type="{{controller.type}}"}}</code>
         </td>
         <td>
-          <code>&#123;{bslabel contentBinding="controller.label" typeBinding="controller.type"}}</code>
+          <code>&#123;{bslabel label typeBinding="type"}}</code>
         </td>
       </tr>
     </tbody>
