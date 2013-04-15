@@ -1,6 +1,10 @@
 App.Router.map ->
   @route 'home', path: "/"
 
+  @resource 'components', ->
+    @resource 'labels'
+    @resource 'badges'
+
   @route 'text'
   @route 'forms'
   @route 'tables'
@@ -8,8 +12,7 @@ App.Router.map ->
   @route 'buttons'
   @route 'navigation'
 
-  @route 'labels'
-  @route 'badges'
+
   @route 'images'
   @route 'thumbnails'
   @route 'alerts'
@@ -18,3 +21,6 @@ App.Router.map ->
 
   @resource 'examples', ->
     @resource 'example', path: ':example_id'
+
+# App.Router.reopen
+#   location: 'history'
