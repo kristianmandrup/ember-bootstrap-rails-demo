@@ -11,5 +11,9 @@ Bootstrap.Label.helper = (view, options) ->
 
 Ember.Handlebars.registerBoundHelper 'bslabel', (options) ->
   viewContext = options.data.view
-  Bootstrap.Label.helper(this, options);
+  Bootstrap.Label.helper(this, options)
   # Ember.Handlebars.helpers.view.apply(viewContext, [Bootstrap.Label, options])
+
+Ember.Handlebars.registerBoundHelper 'bslabel', (object, options) ->
+  Ember.Handlebars.helpers.view.call(object, Bootstrap.Label, options)
+

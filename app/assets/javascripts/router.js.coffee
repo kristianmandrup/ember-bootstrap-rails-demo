@@ -5,6 +5,10 @@ App.Router.map ->
     @resource 'labels'
     @resource 'badges'
 
+  @resource 'formBuilders', ->
+    @resource 'emberForm'
+    @resource 'badges'    
+
   @route 'text'
   @route 'forms'
   @route 'tables'

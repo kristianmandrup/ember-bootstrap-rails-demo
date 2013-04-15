@@ -1,0 +1,55 @@
+<h2>ember-easyForm</h2>
+<p>
+{{#formFor model}}
+  {{input firstName}}
+  {{input lastName}}
+  {{input bio as="text"}}
+  {{input secret as="hidden"}}
+
+  {{input email}}
+  {{input password}}
+
+  {{input firstName label="Your Name"}}
+  {{input firstName placeholder="Enter your first name"}}
+  {{input firstName hint="Enter your first name"}}
+  {{input description as=text inputConfig="class:span5;rows:4"}}
+
+  <h3>Input blocks</h3>
+  {{#input firstName}}
+  {{inputField firstName}}{{labelField firstName}}
+  <br/>
+  {{erroField firstName}}
+  {{/input}}
+
+  {{labelField firstName text="Your first name"}}
+
+  {{inputField bio as="text"}}
+  {{inputField email}}
+
+  {{errorField firstName}}
+  {{hintField firstName text="Your first name"}}
+{{/formFor}}
+</p>
+
+<p>
+You can register custom input types used in the as option of input.
+<code>Ember.EasyForm.Config.registerInputType('my_input', Ember.EasyForm.TextField);</code>
+</p>
+
+To register a wrapper, use the method Ember.EasyForm.Config.registerWrapper passing the wrapper name and its options.
+
+<code>
+Ember.EasyForm.Config.registerWrapper('twitter-bootstrap', {
+  formClass: 'form-horizontal',
+  fieldErrorClass: 'error',
+  errorClass: 'help-inline',
+  hintClass: 'help-block',
+  labelClass: 'control-label',
+  inputClass: 'control-group',
+  wrapControls: true,
+  controlsWrapperClass: 'controls'
+});
+</code>
+<hr>
+<a href="https://github.com/dockyard/ember-easyForm">ember-easyForm</a>
+
