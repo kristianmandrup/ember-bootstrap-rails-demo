@@ -1,3 +1,15 @@
-<h1>Bootstrap Navigation Demo</h1>
-<h2>Navlist</h2>
-{{view Bootstrap.NavList contentBinding="content.selections" selectionBinding="content.selection"}}
+<section id="navigation">
+  <div class="page-header">
+    <h1>Nav: tabs, pills, and lists</h1>
+  </div>
+  <p>All nav components here—tabs, pills, and lists— <strong>share the same controller</strong>.</p>
+  <h3>With Controller</h3>
+  <p>A minimal controller could look like:</p>
+  <pre class="prettyprint linenums">App.NavigationController = Ember.ObjectController.extend
+  selections: ['Alpha', 'Beta', 'Gamma']
+  selection: 'Alpha'</pre>
+
+  {{partial 'tabs'}}
+  {{partial 'pills'}}
+  {{partial 'lists'}}
+</section>

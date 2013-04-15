@@ -4,14 +4,14 @@ App.Router.map ->
   @resource 'components', ->
     @resource 'labels'
     @resource 'badges'
+    @resource 'navigation'
+    @resource 'stackable-nav'
 
   @route 'text'
   @route 'forms'
   @route 'tables'
   @route 'dropdowns'
   @route 'buttons'
-  @route 'navigation'
-
 
   @route 'images'
   @route 'thumbnails'
